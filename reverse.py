@@ -1,5 +1,3 @@
-import pytest
-
 #make a function that takes a string and returns a reversed copy
 
 #make a function that takes a string and reverses it
@@ -20,12 +18,14 @@ def reverse(strong: str) -> str:
 
 
 def test_reverse():
-
-
+    assert reverse("") == ""
+    assert reverse("hello") == "olleh"
+    assert reverse("")
 
 
 def main():
-    print(reverse("hello"))
+    test_reverse()
+    print(reverse("."))
 
 
 
